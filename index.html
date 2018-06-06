@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html >
+
+ <head>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
+   <script src="dynamic-forms.js"></script>
+   <script src="product-config.js"></script>
+   <script src="app.js"></script>
+    <!--<script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.0.js"></script>-->
+     <!--<link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap.min.css" rel="stylesheet">-->
+   <link rel="stylesheet" href="product_style.css">
+   <!-- <link href="bootstrap.min.css" rel="stylesheet"> -->
+
+ </head>
+
+  <body>
+ <!-- <div ng-app="templateFields-app" id="templateFieldContent">
+  <div ng-controller="buildTemplate" id="buildTemplateID" >
+    <div class="container">
+        <div class="expandcollapse-item">
+            <div ng-click="active = !active" ng-class="{'expandcollapse-heading-collapsed': active, 'expandcollapse-heading-expanded': !active}">
+              <p>General Information to Help Build Your Brochur</p></p>
+            </div>
+            <div class="slideDown" ng-hide="active">
+              <div class="expand-collapse-content">
+                  <dynamic-form template="formTemplate" ng-model="formData" ng-submit="processForm()">
+              </div>
+            </div>
+        </div>
+    </div>
+    </dynamic-form>
+  </div>
+</div>    -->
+ <!--<div>-->
+
+
+ <!--&lt;!&ndash;</div>&ndash;&gt;-->
+ <!--<div ng-app="templateFields-app" id="templateFieldContent">-->
+     <!--<div ng-controller="buildTemplate" id="buildTemplateID" class="buildTemplate">-->
+ <!--<accordion close-others="true">-->
+     <!--<accordion-group heading="Static Header, initially expanded" is-open="status.isFirstOpen" is-disabled="status.isFirstDisabled">-->
+         <!--This content is straight in the template.-->
+     <!--</accordion-group>-->
+ <!--</accordion>-->
+
+ <!--</div>-->
+ <!--</div>-->
+ <script>
+	if(window.location.href.indexOf("product_id") > -1){
+		var flag = true;
+	}
+ </script>
+ <div ng-app="templateFields-app" id="templateFieldContent" ng-if = "flag">
+  <div ng-controller="buildTemplate" id="buildTemplateID" class="buildTemplate">
+
+        <dynamic-form template="formTemplate" ng-model="formData" ng-submit="processForm()">
+         </dynamic-form>
+
+  </div>
+ </div>
+ </body>
+
+</html>

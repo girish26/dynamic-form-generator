@@ -1,0 +1,39 @@
+#buildTemplateID input[type=text], select {
+
+    width: 136px;
+    padding: 7px 10px;
+    margin: 8px 0;
+
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#buildTemplateID{
+    width: 300px;
+}
+
+label{
+    width: 490px;
+    text-align: left;
+    display: inline-block;
+}
+
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+
+
+.marcom-accordion{
+    height: 15px;
+    width: 380px;
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 4px;
+    background-color: #cac5c536;
+    cursor: pointer;
+    font-weight: 500;
+}
+
